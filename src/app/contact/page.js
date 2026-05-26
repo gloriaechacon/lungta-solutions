@@ -155,7 +155,6 @@ export default function ContactPage() {
                 <div className="icon-box">☎</div>
                 <div>
                   <p className="item-label">Phone</p>
-                  <p className="item-value">(Add official number)</p>
                   <p className="item-note">Mon - Sat: 8AM - 7PM EST</p>
                 </div>
               </div>

@@ -51,9 +51,8 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
-            <Link href="/home" className="flex-shrink-0 flex items-center" style={{ gap: '10px' }}>
-              <img src="/images/logo.png" alt="Lungta Solutions" height="32" className="max-h-8 w-auto" />
-              <img src="/images/lungta.png" alt="Lungta Solutions" height="20" className="hidden md:block w-auto" style={{ height: '20px' }} />
+            <Link href="/home" className="flex-shrink-0 flex items-center">
+              <img src="/images/lungta.png" alt="Lungta Solutions" className="hidden md:block w-auto" style={{ height: '56px' }} />
             </Link>
 
             {/* Desktop Navigation */}

@@ -37,7 +37,6 @@ export default function Home() {
               </div>
             </div>
             <div className="hero-visual" aria-hidden="true">
-              <img src="/images/logo.png" alt="Lungta" height="32" />
             </div>
           </div>
           <div className="scroll-cue">

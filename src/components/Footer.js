@@ -13,7 +13,7 @@ export default function Footer() {
   const t = translations[lang].footer;
 
   const quickLinks = [
-    { name: translations[lang].navbar.home, href: '/' },
+    { name: translations[lang].navbar.home, href: '/home' },
     { name: translations[lang].navbar.services, href: '/services' },
     { name: translations[lang].navbar.work, href: '/work' },
     { name: translations[lang].navbar.about, href: '/about' },
@@ -119,14 +119,6 @@ export default function Footer() {
             <p className="text-muted-gray text-sm">
               © 2025 Lungta Solutions. {t.rights}
             </p>
-            <div className="flex space-x-6">
-              <Link href="/privacy" className="text-muted-gray hover:text-white transition-colors duration-300 text-sm">
-                {t.privacy}
-              </Link>
-              <Link href="/terms" className="text-muted-gray hover:text-white transition-colors duration-300 text-sm">
-                {t.terms}
-              </Link>
-            </div>
           </div>
         </div>
       </div>

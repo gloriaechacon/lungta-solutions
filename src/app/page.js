@@ -12,10 +12,6 @@ export default function SplashScreen() {
   const [lang, setLang] = useState('en');
 
   useEffect(() => {
-    if (localStorage.getItem('visited') === 'true') {
-      router.replace('/home');
-      return;
-    }
     const saved = localStorage.getItem('lang') || 'en';
     setLang(saved === 'es' ? 'es' : 'en');
   }, []);
@@ -29,14 +25,13 @@ export default function SplashScreen() {
 
     setSelectedLanguage(lang);
     localStorage.setItem('lang', lang);
-    localStorage.setItem('visited', 'true');
 
     window.setTimeout(() => {
       setIsExiting(true);
     }, 700);
 
     window.setTimeout(() => {
-      router.push(lang === 'es' ? '/home?lang=es' : '/home');
+      router.push('/home');
     }, 1100);
   };
 
